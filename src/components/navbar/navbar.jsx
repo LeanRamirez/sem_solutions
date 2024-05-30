@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./navbar.module.css";
-import bg from "../../assets/bg1.png";
+// import style from "./navbar.module.css";
+// import bg from "../../assets/bg1.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
@@ -9,7 +9,6 @@ const NavBar =()=>{
 
   return(
   <div>
-        <img className={style.bgImage} src={bg} alt="" />
         <div className="container position-sticky z-index-sticky top-0 bg-gradient-primary min-vh-100 mt-3">
             <div className="row">
                 <div className="col-12">

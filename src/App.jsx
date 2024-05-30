@@ -1,5 +1,6 @@
 import React from "react"
-import Navbar from './components/navbar/navbar'
+import Navbar from './components/navbar/navbar';
+import Home from './components/home/home';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 
@@ -7,7 +8,8 @@ function App() {
  
 
   return (
-     <div className="w-100">
+     <div >
+       <Home></Home>
       <Navbar/>
      </div>
   )
