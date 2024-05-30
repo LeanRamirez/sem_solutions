@@ -4,11 +4,20 @@
     position: absolute;
 }
 
-
 .bgImage {
-    height: 80%;
+    height: 65%;
     width: 100%;
-    position: absolute;
-    top: -15%;
-    
+    z-index: -999;
 }
+
+.floatData {
+    height: 250px;
+    width: 900px;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+.title {
+    position: absolute;
+    top: 25%;
+}
+
