@@ -1,8 +1,7 @@
 import React from "react";
 // import style from "./navbar.module.css";
 // import bg from "../../assets/bg1.png";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
+
 
 
 const NavBar =()=>{
