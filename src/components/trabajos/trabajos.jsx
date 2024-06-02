@@ -26,25 +26,25 @@ const Trabajos=()=>{
                                 <div className={`bg-warning-soft bottom-0 ${style.container}`}>
                                     <div className="row">
                                         <div className="col-xl-3 position-relative">
-                                            <img className={`position-relative  ${style.img}`} src={bg3} alt="image"/>
+                                            <img className=  {style.img} src={bg3} alt="image"/>
                                         </div>
                                         <div className="col-xl-9">
                                             <div className="row">
                                                 <div className="col-xl-3 col-md-4 py-md-5 py-3">
-                                                    <div className="p-3  border-radius-lg">
+                                                    <div className={`p-3 text-start bg-white border-radius-lg shadow-lg ${style.containerCard}`}>
 
                                                         <h5 className="mt-3">Fast</h5>
                                                         <p>Creativity starts with an empty calendar and ends with a full one.</p>
                                                     </div>
                                                 </div>
                                                 <div className="col-xl-3 col-md-4 py-md-5 py-3">
-                                                    <div className="p-3 text-start bg-white border-radius-lg shadow-lg">
+                                                    <div className={`p-3 text-start bg-white border-radius-lg shadow-lg ${style.containerCard}`}>
                                                         <h5 className="mt-3">Responsive</h5>
                                                         <p>We get insulted by others, lose trust for those We get back.</p>
                                                     </div>
                                                 </div>
                                                 <div className="col-xl-3 col-md-4 py-md-5 py-3">
-                                                    <div className="p-3 text-start border-radius-lg">
+                                                    <div className={`p-3 text-start bg-white border-radius-lg shadow-lg ${style.containerCard}`}>
                                                         <h5 className="mt-3">Unified</h5>
                                                         <p>When playing, surround yourself with people happier than you.</p>
                                                     </div>
