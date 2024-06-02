@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./trabajos.module.css";
 // "../../assets/img/curved-images/curved13.jpg
-import bg3 from "../../assets/bg3.jpg";
+import img1 from "../../assets/img1.png";
 
 const Trabajos=()=>{
     return(
         <>
-            <section className="py-5">
+            <section className="">
                 <div className="container-fluid px-0"/>
                     <div className="row justify-content-center text-center">
                         <div className="col-3 px-md-0"></div>
@@ -14,39 +14,38 @@ const Trabajos=()=>{
                             <div className="row">
                             <div className="col-xl-3"></div>
                                 <div className="col-xl-5 col-md-8 col-12 text-start">
-                                    <div className="p-3 text-start border-radius-lg">
-                                        <h2>¿Por que tener tu pagina web?</h2>
+                                    <div className="text-start border-radius-lg">
+                                        <h2>¿Por que tener tu página web?</h2>
                                         <p className="text-dark text-lg mt-3">
-                                            <span className="font-weight-bold">The time</span>
-                                            is now for it to be okay to be great. People in this world shun people for being great.
-                                            For being a bright color. Contact us at <a href="javascript:;" className="text-info font-weight-normal">contact@soft.com</a>.</p>
+                                            Contar con un sitio web para tu negocio puede ofrecerte múltiples beneficios. ¡Conoce algunos!
+                                             {/* <a href="javascript:;" className="text-info font-weight-normal">contact@soft.com</a>. */}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                                 <div className={`bg-warning-soft bottom-0 ${style.container}`}>
-                                    <div className="row">
-                                        <div className="col-xl-3 position-relative">
-                                            <img className=  {style.img} src={bg3} alt="image"/>
+                                    <div className="row bg-primary">
+                                        <div className="col-xl-3 position-relative d-xl-block d-none">
+                                            <img className={`position-absolute bottom-50 ${style.img}`} src={img1} alt="image"/>
                                         </div>
                                         <div className="col-xl-9">
                                             <div className="row">
-                                                <div className="col-xl-3 col-md-4 py-md-5 py-3">
-                                                    <div className={`p-3 text-start bg-white border-radius-lg shadow-lg ${style.containerCard}`}>
-
-                                                        <h5 className="mt-3">Fast</h5>
-                                                        <p>Creativity starts with an empty calendar and ends with a full one.</p>
+                                                <div className="col-xl-3 col-md-4 py-md-5">
+                                                    <div className="p-3  border-radius-lg p-3">
+                                                        <h5 className="mt-3">En cualquier momento y lugar</h5>
+                                                        <p>Tu negocio puede estar disponible 24/7 para clientes potenciales de todo el mundo. Los clientes pueden ver tus productos y servicios en cualquier momento y desde cualquier lugar.</p>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-3 col-md-4 py-md-5 py-3">
-                                                    <div className={`p-3 text-start bg-white border-radius-lg shadow-lg ${style.containerCard}`}>
-                                                        <h5 className="mt-3">Responsive</h5>
-                                                        <p>We get insulted by others, lose trust for those We get back.</p>
+                                                <div className="col-xl-3 col-md-4 py-md-5 p-3">
+                                                    <div className="p-3 text-start bg-white border-radius-lg shadow-lg">
+                                                        <h5 className="mt-3 text-center">Credibilidad y confiabilidad</h5>
+                                                        <p className="text-center">Una página web no solo muestra profesionalismo, sino que también genera confianza. Puedes incluir testimonios y reseñas de clientes satisfechos para reforzar aún más tu reputación.</p>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-3 col-md-4 py-md-5 py-3">
-                                                    <div className={`p-3 text-start bg-white border-radius-lg shadow-lg ${style.containerCard}`}>
-                                                        <h5 className="mt-3">Unified</h5>
-                                                        <p>When playing, surround yourself with people happier than you.</p>
+                                                <div className="col-xl-3 col-md-4 py-md-5 p-3">
+                                                    <div className="p-3 text-start border-radius-lg">
+                                                        <h5 className="mt-3">Flexibilidad y crecimiento</h5>
+                                                        <p>Una página web es una inversión flexible. A medida que tu negocio crece, tu sitio puede evolucionar con vos. Puedes agregar nuevas funcionalidades, actualizar contenido fácilmente y expandir tu alcance sin límites.</p>
                                                     </div>
                                                 </div>
                                             </div>
