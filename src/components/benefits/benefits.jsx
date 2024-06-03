@@ -1,9 +1,9 @@
 import React from "react";
-import style from "./trabajos.module.css";
+import style from "./benefits.module.css";
 // "../../assets/img/curved-images/curved13.jpg
 import img1 from "../../assets/img1.png";
 
-const Trabajos=()=>{
+const Benefits=()=>{
     return(
         <>
             <section className="">
@@ -30,19 +30,19 @@ const Trabajos=()=>{
                                         </div>
                                         <div className="col-xl-9">
                                             <div className="row">
-                                                <div className="col-xl-3 col-md-4 py-md-5 py-xl-3">
+                                                <div className="col-xl-3 col-md-4 py-md-5 py-xl-3 mx-1">
                                                     <div className="p-3  border-radius-lg p-3">
                                                         <h5 className="mt-3">En cualquier momento y lugar</h5>
                                                         <p className="py-3">Tu negocio puede estar disponible 24/7 para clientes potenciales de todo el mundo. Los clientes pueden ver tus productos y servicios en cualquier momento y desde cualquier lugar.</p>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-3 col-md-4 py-md-5 py-xl-3">
-                                                    <div className="p-3 text-start bg-white shadow-lg rounded-25">
+                                                <div className="col-xl-3 col-md-4 py-md-5 py-xl-3 mx-1">
+                                                    <div className={`p-3 text-start bg-white shadow-lg ${style.middleData}`}>
                                                         <h5 className="mt-3 text-center">Credibilidad y confiabilidad</h5>
                                                         <p className="text-center py-3">Una página web no solo muestra profesionalismo, sino que también genera confianza. Podés incluir testimonios y reseñas de clientes satisfechos para reforzar aún más tu reputación.</p>
                                                     </div>
                                                 </div>
-                                                <div className="col-xl-3 col-md-4 py-md-5 py-xl-3">
+                                                <div className="col-xl-3 col-md-4 py-md-5 py-xl-3 mx-1">
                                                     <div className="p-3 text-start border-radius-lg">
                                                         <h5 className="mt-3">Flexibilidad y crecimiento</h5>
                                                         <p className="py-3">Una página web es una inversión flexible. A medida que tu negocio crece, tu sitio puede evolucionar con vos. Podés agregar nuevas funcionalidades, actualizar contenido fácilmente y expandir tu alcance sin límites.</p>
@@ -61,6 +61,6 @@ const Trabajos=()=>{
     )
 }
 
-export default Trabajos;
+export default Benefits;
 
 // "../../assets/img/pattern-points.png"

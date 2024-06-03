@@ -3,7 +3,7 @@
     flex-direction: row;
 }
 .itemsContainer {
-    background-color: rgb(251, 243, 253);
+    background-color: rgb(243, 249, 253);
     height: 400px;
 }
 .img{
@@ -12,5 +12,8 @@
     position: relative;
     bottom: 120px;
     left: -30px;
+}
+.middleData {
+    border-radius: 10px;
 }
 
