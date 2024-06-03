@@ -1,8 +1,27 @@
+import React from 'react';
+import { useEffect, useState } from 'react';
 import style from './../home/home.module.css';
 import bg from './../../assets/bg1.png';
 
 const Home =() => {
-    
+  const [count, setCount] = useState(0)
+  
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setCount( prevCount=>{
+        if( prevCount < 800){
+          return prevCount + 1;
+        }
+        else{
+          clearInterval(interval);
+          return prevCount;
+        }
+      });
+    }, 5);
+    return()=> clearInterval(interval)
+  },[]);
+
+  
     return (
         <div className={style.container}>
             <img className={style.bgImage} src={bg} alt="" />
@@ -18,7 +37,7 @@ const Home =() => {
                 <h6 className='fw-light fs-6 p-3'>Contamos con la experiencia necesaria para hacer realidad tus proyectos.</h6>
               </div>
               <div className="col-lg-4 col-4">
-                <h5 className="text-info mb-0 fs-1 p-3">+800</h5>
+                <h5 className="text-info mb-0 fs-1 p-3">+{count}</h5>
                 <small className='fs-5'>Horas trabajadas</small>
                 <h6 className='fw-light fs-6 p-3'>Brindamos amplia dedicación para lograr el producto que estás necesitando.</h6>
               </div>
