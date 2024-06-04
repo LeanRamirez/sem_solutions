@@ -5,23 +5,29 @@ import bg from './../../assets/bg1.png';
 
 const Home =() => {
   const [count, setCount] = useState(0)
+  const [intervalTime, setIntervalTime] = useState(10)
   
   useEffect(()=>{
     const interval = setInterval(()=>{
       setCount( prevCount=>{
         if( prevCount < 800){
-          return prevCount + 1;
+          return prevCount + 5;
         }
         else{
           clearInterval(interval);
           return prevCount;
         }
       });
-    }, 5);
+    }, intervalTime);
     return()=> clearInterval(interval)
-  },[]);
+  },[intervalTime]);
 
-  
+  useEffect(()=>{
+    if(count >= 700 && count < 800){
+      setIntervalTime(100)
+    }
+  },[count]); 
+
     return (
         <div className={style.container}>
             <img className={style.bgImage} src={bg} alt="" />

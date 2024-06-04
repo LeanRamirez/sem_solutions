@@ -4,6 +4,7 @@ import Home from './components/home/home';
 import Benefits from "./components/benefits/benefits";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
+import Testimonials from "./components/testimonials/testimonials";
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
        <Home></Home>
       <Navbar/>
       <Benefits/>
+      <Testimonials/>
      </div>
   )
 }
