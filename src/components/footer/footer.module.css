@@ -1,0 +1,16 @@
+.card{
+    background-color: rgb(59, 21, 95);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.cardBody{
+    padding: 20px;
+}
+
+.footerItem{
+    color: gray;
+    justify-content: center;
+    padding-left: 40px;
+    padding-top: 15px;
+}
