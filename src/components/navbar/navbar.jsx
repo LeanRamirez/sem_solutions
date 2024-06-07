@@ -26,7 +26,7 @@ const NavBar =()=>{
                                 <ul className="navbar-nav navbar-nav-hover mx-auto">
                                     <li className="nav-item mx-2">
                                         <a className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" role="button">
-                                        Visión
+                                        Beneficios
                                         {/* <img src="../../assets/img/down-arrow-dark.png" alt="down-arrow" className="arrow ms-1"/> */}
                                         </a>
                                     </li>
@@ -46,7 +46,7 @@ const NavBar =()=>{
 
                                     <li className="nav-item mx-2">
                                         <a className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center">
-                                        Conocenos
+                                        Contactanos
                                         {/* <img src="../../assets/img/down-arrow-dark.png" alt="down-arrow" className="arrow ms-1"></img> */}
                                         </a>
                                     </li>

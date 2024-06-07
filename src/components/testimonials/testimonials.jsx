@@ -6,8 +6,8 @@ const Testimonials = ()=>{
     return (
         <div className={style.container}>
             <div className={style.title}>
-                <h2>Testimonials</h2>
-                <p>Algunas opiniones de nuestros clientes</p>
+                <h2>¿Qué opinan nuestros clientes?</h2>
+                <p>Conocé algunas opiniones de personas que como vos buscaron mejorar sus oportunidades.</p>
             </div>
             <div id="testimonialsCarousel" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
