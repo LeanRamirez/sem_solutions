@@ -19,7 +19,7 @@ const Footer = ()=>{
                                     <div className="row">
                                         <div className="col-sm-5 ms-auto">
                                             <div className="input-group">
-                                                <span className="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                <span className="input-group-text"><i className="fas fa-envelope"></i></span>
                                                 <input type="text" className="form-control mb-sm-0 mb-2" placeholder="Email Here..." />
                                             </div>
                                         </div>
@@ -42,7 +42,7 @@ const Footer = ()=>{
                         <div className="col-lg-6 text-center">
                             <ul className="nav flex-row align-items-center mb-5 mt-sm-0 justify-content-center">
                                 <li className="nav-item">
-                                    <a clasNameclassNames={style.footerItem} href="/home" target="_blank">
+                                    <a className={style.footerItem} href="/home" target="_blank">
                                     Home
                                     </a>
                                 </li>
