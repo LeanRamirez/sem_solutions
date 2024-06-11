@@ -23,7 +23,7 @@ const Home =() => {
   },[intervalTime]);
 
   useEffect(()=>{
-    if(count >= 700 && count < 800){
+    if(count >= 750 && count < 800){
       setIntervalTime(100)
     }
   },[count]); 
