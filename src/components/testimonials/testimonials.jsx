@@ -1,4 +1,4 @@
-import React from "react";
+
 import img from "../../assets/fotoTestimonials.avif";
 import style from "./testimonials.module.css";
 

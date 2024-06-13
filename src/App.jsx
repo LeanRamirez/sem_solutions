@@ -1,10 +1,10 @@
-import React from "react"
+
 import Navbar from './components/navbar/navbar';
 import Home from './components/home/home';
 import Benefits from "./components/benefits/benefits";
 import Testimonials from "./components/testimonials/testimonials";
 import Form from "./components/form/form";
-import Footer from "./components/footer/footer";
+// import Footer from "./components/footer/footer";
 import WhatsappButton from "./components/whatsappButton/whatsappButton";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -28,7 +28,7 @@ function App() {
       <Benefits/>
       <Testimonials/>
       <Form/>
-      <Footer/>
+      {/* <Footer/> */}
       <WhatsappButton/>
      </div>
   )

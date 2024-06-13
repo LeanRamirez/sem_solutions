@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import style from "./form.module.css";
-import bg2 from "../../assets/bg2.jpg";
+import bg2 from "../../assets/bg2.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareInstagram, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faSquarePhone, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -58,13 +61,38 @@ const Form = () => {
   
 
   return (
-    <div className="page-header">
-      <div className="container py-5">
-        <div className="row">
-          <img className={style.bg} src={bg2} alt="bg2" />
-          <div className="col-lg-7 d-flex justify-content-center flex-column">
-            <div className="card card-body d-flex justify-content-center shadow-lg p-5 blur align-items-center">
-              <h3 className="text-center">Contactanos</h3>
+    <div className="page-header w-100">
+      <img className={style.bg} src={bg2} alt="bg2" />
+      <div className={`p-0 m-0 ${style.container}`}>
+        <div className={`row d-flex justify-content-center align-items-center ${style.contactContainer}`}>
+          <div className={`col-lg-5 ${style.contactData}`}>
+            <h2 className="p-3 fw-light">Ponete en contacto con nosotros!</h2>
+
+            <div className="d-flex flex-column align-items-center p-3 gap-5">
+
+              <div className="d-flex flex-column justify-content-start align-items-center">
+                <h5 className="w-100 py-2 fw-light">Teléfono</h5>
+                <div className="w-100 d-flex justify-content-start align-items-center">
+                  <FontAwesomeIcon icon={faSquarePhone} className={`text-white ${style.wsIcon}`} />
+                  <p className="px-3 my-auto">+54 1169763444</p>
+                </div>
+              </div>
+              <div className="d-flex flex-column justify-content-start align-items-center">
+                <h5 className="w-100 py-2 fw-light">Mail</h5>
+                <div className="w-100 d-flex justify-content-start align-items-center">
+                  <FontAwesomeIcon icon={faSquareEnvelope} className={`text-white ${style.wsIcon}`} />
+                  <p className="px-3 my-auto">Semsolutions@gmail.com</p>
+                </div>
+              </div>
+              {/* <div className="w-50 d-flex justify-content-around">
+                <FontAwesomeIcon icon={faSquareWhatsapp} className={`text-white ${style.wsIcon}`} />
+                <FontAwesomeIcon icon={faSquareInstagram} className={`text-white ${style.wsIcon}`} />
+              </div> */}
+            </div>
+          </div>
+          <div className="col-lg-5 rounded-4">
+            <div className="card card-body d-flex shadow-lg p-5 blur">
+              <h5 className="text-center">¿Tenés consultas? Escribinos un mensaje</h5>
               <form role="form" id="contact-form" method="post" autoComplete="off" onSubmit={handleSubmit}>
                 <div className="card-body">
                   <div className="row">
@@ -127,15 +155,15 @@ const Form = () => {
                   </div>
                   <div className="row">
                     <div className="col-md-12">
-                      <div className="form-check form-switch mb-4">
-                        <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked />
+                      {/* <div className="form-check form-switch mb-4">
+                        <input className="form-check-input switch" type="checkbox" id="flexSwitchCheckDefault" checked />
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
                           Estoy de acuerdo <a href="javascript:;" className="text-dark"><u>Términos y condiciones</u></a>.
                         </label>
-                      </div>
+                      </div> */}
                     </div>
                     <div className="col-md-12">
-                      <button type="submit" className="btn bg-gradient-dark w-100">Enviar mensaje</button>
+                      <button type="submit" className="btn bg-gradient-dark w-100 bg-info text-white">Enviar mensaje</button>
                     </div>
                   </div>
                 </div>
