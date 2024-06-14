@@ -135,7 +135,7 @@ const Form = () => {
                       </div>
                     </div>
                     <div className="col-md-12">
-                      <button type="submit" className="btn bg-gradient-dark w-100">Enviar mensaje</button>
+                      <button type="submit" className={` bg-gradient-dark w-100 ${style.btn}`}>Enviar mensaje</button>
                     </div>
                   </div>
                 </div>

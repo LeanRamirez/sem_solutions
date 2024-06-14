@@ -1,12 +1,14 @@
-.container{
-    padding: 30px;
-}
+
 .bg {
     height: 94%;
     position: absolute;
     z-index: 0;
     margin-right: 50px;
     /*Para asegurar que ocupe toda la altura de la columna */
+}
+
+.btn{
+    background-color: rgb(182, 173, 173);
 }
 
 
