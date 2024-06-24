@@ -11,10 +11,9 @@ const Footer = ()=>{
                         <div className={style.cardBody}>
                             <div className="row">
                                 <div className="col-md-8 mx-auto text-center">
-                                    <h3 className="text-white">Be the first who see the news</h3>
+                                    <h3 className="text-white">Sem Solutions, soluciones IT.</h3>
                                     <p className="text-white opacity-8 mb-5 pe-5">
-                                    Your company may not be in the software business,
-                                    but eventually, a software company will be in your business.
+                                        Tu solución IT.
                                     </p>
                                     <div className="row">
                                         <div className="col-sm-5 ms-auto">

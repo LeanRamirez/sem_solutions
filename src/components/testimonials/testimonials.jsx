@@ -11,7 +11,7 @@ const Testimonials = () => {
                     <p>Enterate qué piensan algunas personas que como vos buscaron mejorar sus oportunidades.</p>
                 </div>
                 <div id="testimonialsCarousel" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-inner">
+                    <div className="carousel-inner mx-auto">
                         <div className={`carousel-item active ${style.item}`}>
                             <div className={style.testimonials}>
                                 <div className={style.testiImg}>
