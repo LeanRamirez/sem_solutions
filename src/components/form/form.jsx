@@ -23,14 +23,15 @@ const Form = () => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
+    console.log(formData)
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const newErrors = {};
-  
+
     if (!validateFirstName(formData.name)) {
       newErrors.name = "El nombre es inválido.";
     }
@@ -41,22 +42,59 @@ const Form = () => {
       newErrors.email = "El email es inválido.";
     }
     if (!validateMessage(formData.message)) {
-      newErrors.message = "El mensaje tiene que tener al menos 10 caracteres";
+      newErrors.message = "El mensaje tiene que tener al menos 10 caracteres.";
     }
-  
+
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-    } else {
-      setFormData({
-        name: "",
-        lastName: "",
-        email: "",
-        message: ""
-      });
+    }else {
       setErrors({});
-      // Aquí podrías enviar los datos del formulario a tu servidor
-      console.log("Formulario enviado exitosamente:", formData);
+      try {
+        const response = await fetch('http://localhost:3001/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Correo enviado:', data);
+        } else {
+          const error = await response.json();
+          console.error('Error al enviar el correo:', error);
+        }
+      } catch (error) {
+        console.error('Error al enviar la solicitud:', error);
+      }
     }
+      // } else {
+    //   // Realizar la solicitud fetch al servidor
+    //   fetch('http://localhost:3001/send-email', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(formData)
+    //   })
+    //   .then(response => response.json())
+    //   .then(data => {
+    //     console.log('Correo enviado:', data);
+    //     // Limpiar los campos del formulario si el envío fue exitoso
+    //     setFormData({
+    //       name: '',
+    //       lastName: '',
+    //       email: '',
+    //       message: ''
+    //     });
+    //     setErrors({});
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error al enviar el correo:', error);
+    //     // Puedes agregar un manejo de errores aquí si es necesario
+    //   });
+    // }
   };
   
 
