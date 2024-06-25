@@ -25,7 +25,6 @@ const Form = () => {
       ...formData,
       [name]: value,
     });
-    console.log(formData)
   };
 
   const handleSubmit = async (event) => {
@@ -69,32 +68,6 @@ const Form = () => {
         console.error('Error al enviar la solicitud:', error);
       }
     }
-      // } else {
-    //   // Realizar la solicitud fetch al servidor
-    //   fetch('http://localhost:3001/send-email', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(formData)
-    //   })
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     console.log('Correo enviado:', data);
-    //     // Limpiar los campos del formulario si el envío fue exitoso
-    //     setFormData({
-    //       name: '',
-    //       lastName: '',
-    //       email: '',
-    //       message: ''
-    //     });
-    //     setErrors({});
-    //   })
-    //   .catch((error) => {
-    //     console.error('Error al enviar el correo:', error);
-    //     // Puedes agregar un manejo de errores aquí si es necesario
-    //   });
-    // }
   };
   
 
