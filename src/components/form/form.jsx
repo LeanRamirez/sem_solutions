@@ -13,6 +13,7 @@ const Form = () => {
     message: ""
   });
   const [errors, setErrors] = useState({});
+  const [emailSent, setEmailSent]= useState(false)
 
   const validateFirstName = (name) => /^[a-zA-Z]+$/.test(name);
   const validateLastName = (name) => /^[a-zA-Z]+$/.test(name);
@@ -58,6 +59,19 @@ const Form = () => {
         });
 
         if (response.ok) {
+
+          setFormData({
+            name:"",
+            lastName:"",
+            email:"",
+            message:"",
+          })
+          setEmailSent(true);
+          setTimeout(()=>{
+            setEmailSent(false)
+          },3000)
+
+          
           const data = await response.json();
           console.log('Correo enviado:', data);
         } else {
@@ -177,6 +191,11 @@ const Form = () => {
                       <button type="submit" className="btn bg-gradient-dark w-100 bg-info text-white">Enviar mensaje</button>
                     </div>
                   </div>
+                  {emailSent && (
+                    <div className="alert alert-success mt-3" role="alert">
+                      ¡Email enviado!
+                    </div>
+                  )}
                 </div>
               </form>
             </div>
