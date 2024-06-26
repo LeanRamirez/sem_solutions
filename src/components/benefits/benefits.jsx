@@ -7,7 +7,7 @@ import img2 from '../../assets/img2.png';
 const Benefits=()=>{
     return(
         <>
-            <section className="">
+            <section id="benefits" className="">
                 <div className="container-fluid px-0"/>
                     <div className="row justify-content-center text-center m-0">
                         <div className="col-3 px-md-0"></div>

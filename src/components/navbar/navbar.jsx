@@ -25,14 +25,14 @@ const NavBar =()=>{
                             <div className="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
                                 <ul className="navbar-nav navbar-nav-hover mx-auto">
                                     <li className="nav-item mx-2">
-                                        <a className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" role="button">
+                                        <a href="#benefits" className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" role="button">
                                         Beneficios
                                         {/* <img src="../../assets/img/down-arrow-dark.png" alt="down-arrow" className="arrow ms-1"/> */}
                                         </a>
                                     </li>
 
                                     <li className="nav-item mx-2">
-                                        <a className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" role="button">
+                                        <a href="#testimonials" className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" role="button">
                                         Clientes
                                         {/* <img src="../../assets/img/down-arrow-dark.png" alt="down-arrow" className="arrow ms-1"/> */}
                                         </a>
@@ -45,7 +45,7 @@ const NavBar =()=>{
                                     </li>
 
                                     <li className="nav-item mx-2">
-                                        <a className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center">
+                                        <a href="#contactanos" className="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center">
                                         Contactanos
                                         {/* <img src="../../assets/img/down-arrow-dark.png" alt="down-arrow" className="arrow ms-1"></img> */}
                                         </a>

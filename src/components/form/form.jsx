@@ -86,7 +86,7 @@ const Form = () => {
   
 
   return (
-    <div className="page-header w-100">
+    <div id="contactanos" className="page-header w-100">
       <img className={style.bg} src={bg2} alt="bg2" />
       <div className={`p-0 m-0 ${style.container}`}>
         <div className={`row d-flex justify-content-center align-items-center ${style.contactContainer}`}>

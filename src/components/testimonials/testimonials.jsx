@@ -4,7 +4,7 @@ import style from "./testimonials.module.css";
 
 const Testimonials = () => {
     return (
-        <div className={style.main}>
+        <div id="testimonials" className={style.main}>
             <div className={`${style.container} shadow`}>
                 <div className={style.title}>
                     <h2>Conocé opiniones de nuestros clientes</h2>
