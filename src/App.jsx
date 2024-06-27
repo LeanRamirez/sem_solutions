@@ -6,6 +6,7 @@ import Testimonials from "./components/testimonials/testimonials";
 import Form from "./components/form/form";
 import Footer from "./components/footer/footer";
 import WhatsappButton from "./components/whatsappButton/whatsappButton";
+import Services from './components/services/services';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -27,6 +28,7 @@ function App() {
       <Navbar/>
       <Benefits/>
       <Testimonials/>
+      <Services/>
       <Form/>
       <Footer/>
       <WhatsappButton/>
