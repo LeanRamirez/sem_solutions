@@ -10,9 +10,9 @@ const Services = ()=>{
                     <div className="row">
                         <div className="col-md-8 mx-auto text-center">
                             {/* <span className="badge bg-gradient-dark mb-2">Pricing</span> */}
-                            <h3 className="">¿Como hacemos tu pagina?</h3>
-                            <p className="">No te preocupes, nosotros nos encargamos de todo</p>
-                            <p className="">Nuestro equipo de expertos te asesorara y te acompañara durante todo el proceso para lograr los mejores resultados</p>
+                            <h1 className="">¿Como hacemos tu pagina?</h1>
+                            <h5 className="">No te preocupes, nosotros nos encargamos de todo</h5>
+                            <h5 className="">Nuestro equipo de expertos te asesorara y te acompañara durante todo el proceso para lograr los mejores resultados</h5>
                         </div>
                     </div>
                 </div>
@@ -26,48 +26,26 @@ const Services = ()=>{
                                     {/* <h6 className="text-dark opacity-8 mb-0">Starter</h6> */}
                                     <h1 className="font-weight-bolder">1</h1>
                                 </div>
-                                <div className="card-body mx-auto pt-0">
-                                    {/* <div className="justify-content-start d-flex px-2 py-1">
-                                        <div>
-                                            <i className="fas fa-check text-dark opacity-6 text-sm"></i>
-                                        </div>
-                                        <div className="ps-2">
-                                            <span className="text-sm"></span>
-                                        </div>
-                                    </div> */}
+                                <div className={`card-body mx-auto pt-0 ${style.cardBody}`}>
 
                                     <div className="justify-content-start d-flex px-2 py-1">
                                         <div>
                                             <i className="fas fa-check text-dark opacity-6 text-sm"></i>
                                         </div>
                                         <div className="ps-2">
-                                            <span className="text-sm">Te contactaremos para programar una llamada o videllamada para planear juntos tu web.</span>
+                                            <span className="text-sm">Te contactaremos para programar una llamada o videllamada para planear juntos tu web. <br/>Elegiremos la plantilla de diseño que mejor se adapte a tu actividad y la diseñaremos a tu medida</span>
                                         </div>
                                     </div>
 
-                                    <div className="justify-content-start d-flex px-2 py-1">
+                                    {/* <div className="justify-content-start d-flex px-2 py-1">
                                         <div>
                                             <i className="fas fa-check text-dark opacity-6 text-sm"></i>
                                         </div>
                                         <div className="ps-2">
                                             <span className="text-md">Elegiremos la plantilla de diseño que mejor se adapte a tu actividad y la diseñaremos a tu medida</span>
                                         </div>
-                                    </div>
-
-                                    {/* <div className="justify-content-start d-flex px-2 py-1">
-                                        <div>
-                                            <i className="fas fa-check text-dark opacity-6 text-sm"></i>
-                                        </div>
-                                        <div className="ps-2">
-                                            <span className="text-sm">Lite support</span>
-                                        </div>
                                     </div> */}
                                 </div>
-                                {/* <div className="card-footer pt-0">
-                                    <a href="javascript:;" className="btn w-100 bg-gradient-dark mb-0">
-                                        Buy now
-                                    </a>
-                                </div> */}
                             </div>
                         </div>
 
@@ -79,7 +57,7 @@ const Services = ()=>{
                                        
                                     
                                 </div>
-                                <div className="card-body mx-auto pt-0">
+                                <div className={`card-body mx-auto pt-0 ${style.cardBody}`}>
                                     <div className="justify-content-start d-flex px-2 py-1">
                                         <div>
                                             <i className="fas fa-check text-dark opacity-6 text-sm"></i>
@@ -103,9 +81,8 @@ const Services = ()=>{
                                 <div className="card-header text-center pt-4 pb-2">
                                     {/* <h6 className="text-dark opacity-8 text mb-0">Premium</h6> */}
                                     <h1 className="font-weight-bolder">3</h1>
-                                       
-                                    
                                 </div>
+                                    
                                 <div className="card-body mx-auto pt-0">
                                     <div className="justify-content-start d-flex px-2 py-1 py-1">
                                         <div>

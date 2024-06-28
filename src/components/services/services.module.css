@@ -1,3 +1,9 @@
 .bg{
     background-color: aqua;
 }
+.cardBody{
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    margin: 0;
+}
